@@ -16,7 +16,7 @@ class SignUpScreen extends StatelessWidget {
           onPressed: () {
             Navigator.pop(context);
           },
-          icon: Icon(Icons.arrow_back),
+          icon: const Icon(Icons.arrow_back),
         ),
       ),
       body: SingleChildScrollView(
@@ -81,7 +81,7 @@ class SignUpScreen extends StatelessWidget {
               const SizedBox(
                 height: 10,
               ),
-              CustomGoogleBtn(),
+              const CustomGoogleBtn(),
               const SizedBox(
                 height: 5,
               ),

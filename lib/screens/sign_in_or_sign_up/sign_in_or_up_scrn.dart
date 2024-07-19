@@ -13,68 +13,71 @@ class SignInOrUpScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Column(
-          children: [
-            const SizedBox(
-              height: 100,
-            ),
-            Container(
-              height: 200,
-              width: 350,
-              decoration: const BoxDecoration(
-                  //color: Colors.amber,
-                  image: DecorationImage(image: AssetImage(AppImages.logos))),
-            ),
-            const SizedBox(
-              height: 5,
-            ),
-            CustomText(
-              text: 'PDC',
-              fontSize: 30,
-            ),
-            CustomText(
-              text: 'Control of Your Videos',
-              fontSize: 23,
-            ),
-            SizedBox(
-              height: 100,
-            ),
-            CustomElevatedButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (BuildContext contex) => SignInScreen(),
-                  ),
-                );
-              },
-              label: 'SIGN IN',
-              labelColor: Colors.white,
-              backgroundColor: const Color(0xff80AEF2),
-              width: 350,
-              borderRadius: 50,
-              borderColor: const Color(0xff80AEF2),
-            ),
-            SizedBox(
-              height: 10,
-            ),
-            CustomElevatedButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (BuildContext context) => SignUpScreen(),
-                  ),
-                );
-              },
-              label: 'SIGN UP',
-              labelColor: Colors.white,
-              backgroundColor: const Color(0xff80AEF2),
-              width: 350,
-              borderRadius: 50,
-              borderColor: const Color(0xff80AEF2),
-            ),
-          ],
+        child: Padding(
+          padding: const EdgeInsets.only(left: 20,right: 20),
+          child: Column(
+            children: [
+              const SizedBox(
+                height: 100,
+              ),
+              Container(
+                height: 200,
+                width: 350,
+                decoration: const BoxDecoration(
+                    //color: Colors.amber,
+                    image: DecorationImage(image: AssetImage(AppImages.logos))),
+              ),
+              const SizedBox(
+                height: 5,
+              ),
+              CustomText(
+                text: 'PDC',
+                fontSize: 30,
+              ),
+              CustomText(
+                text: 'Control of Your Videos',
+                fontSize: 23,
+              ),
+              SizedBox(
+                height: 100,
+              ),
+              CustomElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (BuildContext contex) => SignInScreen(),
+                    ),
+                  );
+                },
+                label: 'SIGN IN',
+                labelColor: Colors.white,
+                backgroundColor: const Color(0xff80AEF2),
+                width: 350,
+                borderRadius: 50,
+                borderColor: const Color(0xff80AEF2),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              CustomElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (BuildContext context) => SignUpScreen(),
+                    ),
+                  );
+                },
+                label: 'SIGN UP',
+                labelColor: Colors.white,
+                backgroundColor: const Color(0xff80AEF2),
+                width: 350,
+                borderRadius: 50,
+                borderColor: const Color(0xff80AEF2),
+              ),
+            ],
+          ),
         ),
       ),
     );
